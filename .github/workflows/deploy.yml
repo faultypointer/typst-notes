@@ -37,7 +37,12 @@ jobs:
             cargo-rheo-${{ runner.os }}-
 
       - name: Install Rheo
-        run: cargo install rheo --locked
+        run: |
+          if ! command -v rheo &> /dev/null; then
+            cargo install rheo --locked
+          else
+            echo "rheo already installed: $(rheo --version)"
+          fi
 
       - name: Compile with Rheo
         run: rheo compile .
