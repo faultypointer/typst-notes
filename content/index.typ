@@ -6,6 +6,9 @@
 This is my notes, written in #link("https://typst.app/")[typst] built with #link("https://rheo.ohrg.org/")[rheo].
 
 == Browse
+=== Data Structure and Algorithms
+- #link("./algodesman.typ")[The Algorithm Design Manual]
+
 === #link("./typst.typ")[Typst]
 Time to finally learn typst.
 
