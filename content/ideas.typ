@@ -1,3 +1,5 @@
+#import "@preview/oxifmt:1.0.0": strfmt
+
 #set document(
   title: [Ideas]
 )
@@ -25,3 +27,15 @@ This involves
 
 The last two could be combined into a unified cli application (and maybe way wayy later into a full fledge native graphical app).
 
+==== Storing Events
+I thought about storing each events in a seperate markdown(with compact set of features) file placed into the directory tree made up
+of the year, month and day of the event but considering my future plan for this system storing it in database right from the start is
+probably a good idea.
+
+Hopefully, this simplifies things like "compilation"(event verification before storing the events in the database), converting to json
+and other stuff I need to do.
+
+==== Command Line Interface
+#let pname = "journal"
+
+Each journal needs to have #strfmt("{}.toml", pname)
