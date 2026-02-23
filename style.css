@@ -37,7 +37,7 @@ body {
 nav[role="doc-toc"] {
   position: fixed;
   top: 50px;
-  right: 15vw;
+  left: 15vw;
   width: var(--toc-width);
   font-size: 0.82em;
   line-height: 1.5;
@@ -52,7 +52,7 @@ nav[role="doc-toc"]::-webkit-scrollbar {
 }
 
 nav[role="doc-toc"] h2 {
-  font-size: 0.75em;
+  /* font-size: 0.75em; */
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -83,6 +83,43 @@ nav[role="doc-toc"] a:hover {
 nav[role="doc-toc"] div:empty {
   display: none;
 }
+
+/* ============================================
+   Bibliography
+   ============================================ */
+a[role="doc-biblioref"] {
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+section[role="doc-bibliography"] {
+  position: fixed;
+  top: 50px;
+  right: 15vw;
+  width: var(--toc-width);
+  font-size: 0.82em;
+  line-height: 1.5;
+  color: var(--blockquote-text);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+section[role="doc-bibliography"]::-webkit-scrollbar {
+  display: none;
+}
+
+section[role="doc-bibliography"] h2 {
+  /* font-size: 0.75em; */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--blockquote-text);
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
+
 /* ============================================
    Typography
    ============================================ */
